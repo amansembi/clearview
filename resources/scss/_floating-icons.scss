@@ -1,0 +1,113 @@
+// floating-icons scss
+
+.floating-icons-bx{
+	// width: 150px;
+	// height: 175px;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed;
+	right: 1rem;
+	bottom: 7rem;
+	z-index: 1;
+	.menu-float.animate{
+		opacity: 1;
+		width: 50px;
+		height: 50px;
+		font-size: 2rem;
+		&:nth-child(1) {
+			transform: rotate(0deg) translate(-100px) rotate(0deg);
+		}
+		&:nth-child(2) {
+			transform: rotate(90deg) translate(-115px) rotate(-90deg);
+		}
+		&:nth-child(3) {
+			transform: rotate(58deg) translate(-115px) rotate(-58deg);
+		}
+		&:nth-child(4) {
+			transform: rotate(27deg) translate(-115px) rotate(-27deg);
+		}
+		&:nth-child(5) {
+			transform: rotate(-5deg) translate(-115px) rotate(5deg);
+		}
+	}
+}
+.cont {
+	position: absolute;
+	color: #fff;
+	border-radius: 100%;
+	background: #323030;
+	padding: 10px;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.float-btn{
+	position: absolute;
+	color: #fff;
+	border-radius: 100%;
+	background-color: #1b56a3;
+	padding: 15px;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	z-index: 10;
+	&:focus {
+		outline: none;
+	}
+	.circle {
+		position: absolute;
+		border: 2px solid #fff;
+		width: 50px;
+		height: 50px;
+		background: transparent;
+		border-radius: 50%;
+		opacity: 1;
+		transition: all 0.4s;
+	}
+	.circle.animate {
+		width: 0px;
+		height: 0px;
+		opacity: 0;
+	}
+}
+.menu-float {
+	position: absolute;
+	color: #fff;
+	border-radius: 100%;
+	background: #1b56a3;
+	padding: 10px;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0px;
+	width: 0px;
+	height: 0px;
+	transform: translateY(0px);
+	right: 15px;
+	@include common-transition;
+}
+div.times {
+	position: absolute;
+	font-size: 50px;
+	opacity: 0;
+	transition: all 0.4s;
+}
+div.times.animate{
+	transform: rotate(360deg);
+	opacity: 1;
+	font-size: 50px;
+}
+
+.float-btn .img{
+	transition: all 0.8s ease;
+}
+.float-btn .img.animate{
+	transform: rotate(360deg);
+}

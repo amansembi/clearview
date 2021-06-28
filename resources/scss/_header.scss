@@ -1,0 +1,52 @@
+// header scss
+
+.main-header{
+	.navbar-brand{
+		max-width: 250px;
+	}
+	ul>li{
+		margin-left: 1.5rem;
+		a{
+			color: $color-white;
+			position: relative;
+			font-size: 1.2rem;
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -4px;
+				border-bottom: 2px solid $color-white;
+			}
+		}
+		a.phone{
+			margin-left: 2rem;
+			&:before{
+				content: '\f095';
+				font: normal normal normal 14px/1 FontAwesome;
+				margin-right: 0.5rem;
+				font-size: 1.3rem;
+				position: absolute;
+				left: -1.5rem;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+
+a.bar-li{
+	display: block;
+	padding: 5px 0;
+	&:after{display: none;}			
+	span{
+		display: block;
+		height: 3px;
+		width: 40px;
+		background-color: $color-white;
+		margin: 0.4rem 0;
+		position: relative;
+	}
+	span:first-child{margin: 0;}
+	span:last-child{margin: 0;}
+}

@@ -1,0 +1,32 @@
+// Admin variables scss
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-blue: #47aff9;
+$site-color: #959595;
+
+// @extend %d-flex;
+%d-flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+// @extend %flex-wrap;
+%flex-wrap{
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+// @include bg-gradient;
+@mixin bg-gradient{
+	background-image: -moz-linear-gradient( 33deg, rgb(3,197,207) 0%, rgb(79,172,254) 100%);
+	background-image: -webkit-linear-gradient( 33deg, rgb(3,197,207) 0%, rgb(79,172,254) 100%);
+	background-image: -ms-linear-gradient( 33deg, rgb(3,197,207) 0%, rgb(79,172,254) 100%);
+	background-image: linear-gradient( 33deg, rgb(3,197,207) 0%, rgb(79,172,254) 100%);
+}

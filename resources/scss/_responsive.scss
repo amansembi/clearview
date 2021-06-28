@@ -1,0 +1,380 @@
+// Responsive scss
+
+// min width media start
+@media (min-width: 767px){
+	.mortgage-bx{width: 55%;}
+	.localbank-bx{width: 45%;}
+}
+@media (min-width: 1200px){
+	.container {
+		max-width: 1190px;
+	}
+}
+@media (min-width: 1600px){
+	.container {
+		max-width: 1560px;
+	}
+	.work-bx{
+		.entry-txt{
+			font-size: 1rem;
+		}
+	}
+	.latest-awars{
+		.img{width: 170px;}
+		.entry-txt{width: calc(100% - 170px);}
+	}
+}
+// min width media end
+
+
+// max width media start
+@media (max-width: 1440px){
+	.work-bg-curve{
+		background-size: calc(100% - 300px) auto;
+	}
+	body{
+		font-size: 0.875rem;
+	}
+}
+@media (max-width: 1199px){
+	.menu-sec{
+		ul.menu-bx{
+			> li{
+				margin-bottom: 2rem;
+				> a{
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+	.work-bg-curve{background: none;}
+	.call-us-sec{
+		.link-sec{padding-bottom: 12rem;}
+	}
+}
+@media (max-width: 991px){
+	.h1, h1{font-size: 3.5rem;}
+	.h2, h2{font-size: 1.6rem;}
+	.h3, h3{font-size: 1.3rem;}
+	.mb-5, .my-5{margin-bottom: 2rem !important;}
+	.mt-5, .my-5{margin-top: 2rem!important;}
+	.entry-content{padding-top: 1rem;}
+	.common-sec{
+		padding: 2.5rem 0;
+	}
+	.main-header{
+		.navbar-brand{max-width: 225px;}
+		ul{
+			> li{
+				a{font-size: 0.875rem;}
+			}
+		}
+	}
+	.home-banner{
+		text-align: center;
+		padding-bottom: 3rem;
+	}
+	.mg-schedule-sec{
+		.schedule-form{
+			padding: 0 1rem;
+		}
+	}
+	.schedule-form{
+		.input-icon{
+			padding: 0.5rem 1rem;
+			.icon{width: 30px;}
+			input{font-size: 0.875rem;}
+		}
+	}
+	.meet-you-sec{		
+		.img .row{margin-left: 0;}
+		.img-3{
+			position: static;
+			margin-top: -100px;
+		}
+		.entry-txt{margin-top: 2rem;}
+	}	
+	.blog-dv{
+		.img{
+			a{display: block;}
+		}
+	}
+	.footer-bx{
+		margin-top: 1rem;
+	}
+	.footer-bx.footer-1{margin-top: 0;}
+	.testimonial-bx{
+		.img{
+			height: 120px;
+			width: 120px;
+		}
+		.slick-arrow{
+			height: 40px;
+			width: 40px;
+			bottom: 3rem;
+			&:before{width: 20px;}
+		}
+	}
+	.common-icon-bx{
+		.img{
+			img{max-width: 100px;}
+		}
+	}
+	.pagination-bx{
+		margin-bottom: 3rem;
+	}
+	.matching-mortgages-offers{
+		margin-top: 2rem;
+	}
+	.sidebar-sec{
+		margin-top: 2rem;
+	}
+}
+@media (max-width: 767px){
+	.h1, h1{font-size: 3rem;}
+	.h2, h2{font-size: 1.5rem;}
+	.h4, h4{font-size: 1rem;}
+	.h5, h5{font-size: 0.875rem;}
+	.main-header{
+		.navbar-brand{max-width: 180px;}
+		ul{
+			> li{
+				margin-left: 0.5rem;
+			}
+		}
+	}
+	a.bar-li{
+		span{
+			width: 30px;
+			margin: 0.3rem 0;
+		}
+	}
+	
+	.closebtn.bar-li{
+		span:nth-child(1){top:12px;}
+	}
+	.menu-sec{padding: 50px 0 0;}
+	.banner-sec{
+		.caption-bx{padding: 0;}
+	}
+	.home-banner{padding-top: 2.5rem;}
+	.range-bx{
+		.rangeslider-wrap{padding-top: 50px;}
+	}
+	.meet-you-sec{
+		.link{margin-top: 1rem;}
+	}
+	.testimonial-bx{
+		.testimonial-image-slider{
+			&:after{
+				width: 50px;
+				width: 50px;
+				margin: -1rem auto 1rem;
+			}
+			.slick-list{
+				min-height: 165px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px){
+	.h1, h1{font-size: 2.2rem;}
+	.h2, h2{font-size: 1.3rem;}
+	.h3, h3{font-size: 1.1rem;}
+	.h4, h4{font-size: 0.875rem;}
+	.p-4{padding: 1rem!important;}
+	[class*="col-"]:last-child{margin-bottom: 0 !important;}
+	.btn-large{
+		min-width: 150px;
+		padding: 0.7rem 1.5rem;
+	}
+	.white-btn{
+		font-size: 0.75rem;
+		padding: 0.4rem 1.5rem;
+	}
+	.common-icon-bx{
+		padding: 1rem;
+		.icon{display: inline-block;}
+	}
+	.main-header{
+		.navbar{padding:0.5rem 0;}
+		.navbar-brand{
+			// margin: 0 auto 10px;
+		}
+		ul.flex-row{
+			// width: 100%;
+			// justify-content: center;
+			// margin-bottom: 0.5rem;
+		}
+	}
+	.menu-sec{
+		ul.menu-bx{
+			> li{
+				margin-bottom: 1rem;
+				> a{
+					font-size: 1.1rem;
+				}
+			}
+		}
+		.icon-toggle{
+			position: relative;
+			top:4px;
+		}
+	}
+	.sidenav{
+		.closebtn{
+			position: static;
+		}
+	}
+	a.bar-li{
+		margin-left: 1rem;
+		span{width:26px;}
+	}
+	.work-bx{min-height: auto;}
+	.schedule-form{
+		.input-icon{
+			padding: 0.5rem 0.5rem;
+			.icon{width:24px;}
+		}
+	}
+	.save-mortgage-sec{
+		padding-top:0;
+	}
+	.call-us-sec{
+		padding-bottom: 0;
+		.link-sec{padding-bottom: 11rem;}
+		.mortgage-bx{padding: 2rem 1rem;}
+	}
+	.testimonial-bx{
+		.testimonial-image-slider{
+			&:after{
+				margin: 0 auto;
+			}
+			.slick-list{
+				min-height: auto;
+			}
+			.slick-slide{
+				@include transform(none !important);
+				.img{
+					@include transform(scale(1));
+				}
+			}
+		}
+		.slick-prev{left: calc(50% - 150px);}
+		.slick-next{right: calc(50% - 150px);}
+		.entry-txt{
+			.desc{
+				font-size: 0.75rem;
+				line-height: 1.5rem;
+			}
+		}
+	}
+	.form-control{font-size: 0.875rem;}
+	#borrow-calculate-form{
+		margin-bottom: 2.5rem;
+	}
+	#bestguys-calculate-form{
+		[class*="col-"].mt-5{margin-top: 0 !important;}
+	}
+	.footer-top{
+		ul > li > a{
+			font-size: 0.75rem;
+			padding: 0.3rem 1rem;
+		}
+	}
+	.latest-offers-dv{
+		.entry-txt{
+			width: 100%;
+			padding: 1.5rem 0 0 !important;
+		}
+	}
+	.latest-awars{
+		.img{
+			border-right: none;
+		}
+		.entry-txt{
+			width: 100%;
+			border-bottom: 5px solid $color-blue;
+		}
+	}
+	.latest-awars-sec .pagination-bx{margin-bottom: 0;}
+
+	.meet-you-sec{
+		.img {
+			.row{margin: 0;}
+			[class*="col-"]{padding: 0;}
+		}
+		.col-md-6.pl-0{
+			padding-left: 15px;
+		}
+		.img-3{margin-top: 0;}
+	}
+	.cta-link-sec{
+		.card-header{
+			.d-flex{
+				span{width: calc(100% - 45px);}
+				.icon{width: 35px;}
+			}
+		}
+	}
+	#contact-form{
+		.submit{margin-top:1.5rem}
+	}
+	.float-btn{
+		width: 50px;
+		height: 50px;
+		padding: 12px;
+	}
+	.menu-sec{padding-top: 5px;}
+	.web-menu-bx{display: none;}
+	.mobile-menu-bx{display: block;}
+
+	.mobile-contact{
+		li{
+			margin-right: 0.5rem;
+			a{
+				font-size: 0.875rem;
+				position: relative;
+				font-weight: normal;
+				&:after{
+					content: '';
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: -4px;
+					border-bottom: 1px solid $color-white;
+				}
+			}
+			a.phone{
+				margin-left: 2.5rem;
+				&:before{
+					content: '\f095';
+					font: normal normal normal 14px/1 FontAwesome;
+					margin-right: 0.5rem;
+					font-size: 1.1rem;
+					position: absolute;
+					left: -1.1rem;
+					top: calc(50% + 2px);
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 350px){
+	.testimonial-bx{
+		.img{
+			width:90px;
+			height:90px;
+		}
+	}
+	.m-icon-dv{
+		.icon{
+			span{width: 40px;}
+		}
+	}
+	.mobile-contact li a.phone{margin-left: 1.5rem;}
+}
+// max width media end

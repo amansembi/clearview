@@ -1,0 +1,38 @@
+// contact page scss
+
+.contact-info{
+	.icon{
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		border-radius: 100%;
+		@include bg-gradient;
+		color: $color-white;
+		font-size: 1.5rem;
+		text-align: center;
+		margin-right: 15px;
+		@include common-transition;
+	}
+	.entry-text{
+		width: calc(100% - 55px);
+		p{line-height: 1.2rem;}
+		a{
+			color: $site-color;
+			&:hover,&:focus{
+				color: $color-blue;
+			}			
+		}
+	}
+	&:hover,&:focus{
+		.icon{
+			@include transform(translateX(10px));
+		}
+	}
+}
+
+.map-sec{
+	#map{
+		width: 100%;
+		min-height: 350px;
+	}
+}

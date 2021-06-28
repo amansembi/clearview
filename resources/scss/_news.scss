@@ -1,0 +1,9 @@
+// news page scss
+
+.share-link-bx{
+	.social-links{
+		a{
+			&:first-child{margin-left: 0;}
+		}
+	}
+}

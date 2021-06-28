@@ -1,0 +1,39 @@
+// Our Awards page scss
+
+.latest-awars{
+	.img{
+		width: 170px;
+		text-align: center;
+		border-right: 5px solid $color-blue;
+		padding: 1rem;
+		span{
+			display: inline-block;
+		}
+		p{
+			line-height: 1rem;
+			margin-top: 0.5rem;
+		}
+	}
+	.entry-txt{
+		width: calc(100% - 170px);
+		padding: 1rem;
+		.description{
+			font-size: 0.875rem;
+			line-height: 1.5rem;
+			font-weight: 500;
+		}
+	}
+	&:hover,&:focus{
+		.img{
+			img{
+				-webkit-transform-origin: center;
+				transform-origin: center;
+				-webkit-animation: shake 1s 1;
+				-moz-animation: shake 1s 1;
+				-o-animation: shake 1s 1;
+				animation: shake 1s 1;
+			}
+		}
+	}
+}
+

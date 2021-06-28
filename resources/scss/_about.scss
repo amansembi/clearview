@@ -1,0 +1,33 @@
+// about page scss
+
+.team-bx{
+	@include common-transition;
+	.img{
+		height: 75px;
+	}
+	.profile-image{
+		height: 150px;
+		width: 150px;
+		border-radius: 100%;
+		overflow: hidden;
+		margin: 0 auto;
+		@include common-transition;
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit:cover;
+		}
+	}
+	.entry-txt{
+		padding-top: 80px !important;
+	}
+	&:hover,&:focus{
+		.profile-image{
+			-webkit-transform-origin: center;
+			transform-origin: center;
+			-webkit-animation: heartBeat 1s 1;
+			animation: heartBeat 1s 1;
+		}
+		@include transform(translateY(-10px));
+	}
+}

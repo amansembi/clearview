@@ -1,0 +1,69 @@
+// Review page scss
+
+.c-review{
+	font-size: 1.5rem;
+	span{
+		display: inline-block;
+		margin: 0.5rem;
+		color: $site-color;
+	}
+	span.active{
+		color: #F6CE31;
+	}
+}
+.customer-reviews{
+	.name{
+		border-left: 2px solid $color-blue;
+		padding-left: 1.5rem;
+	}	
+}
+
+.c-review-slider-dv{
+	border: 2px solid $color-blue;
+	padding: 1rem;
+}
+.c-review-slider{
+	.slick-arrow{
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #eeeeee;
+		border-radius: 100%;
+		z-index: 99;
+		top: calc(50% - 10%);
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 15px;
+			margin: 0 auto;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		&:hover,&:focus{
+			background-color: $color-blue;
+			&:before{
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
+	.slick-prev{
+		left: 0;
+		&:before{background-image: url(../img/arrow-left.png);}
+	}
+	.slick-next{
+		right: 0;
+		&:before{background-image: url(../img/arrow-right.png);}
+	}
+	.c-review-content{
+		padding: 0 2rem;
+		.desc{
+			background-color: $color-gray;
+		}
+	}
+}

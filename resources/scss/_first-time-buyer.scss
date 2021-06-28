@@ -1,0 +1,153 @@
+// first-time-buyer page scss
+
+.latest-offers-dv{
+	.img{
+		width: 200px;
+		padding: 15px;
+	}
+	.entry-txt{
+		width: calc(100% - 200px);
+	}
+	.txt-bx{
+		font-weight: 500;
+		>div{
+			margin-bottom: 0.5rem;
+		}
+	}	
+}
+.speak-to-expert{
+	color: $color-white;
+	a{
+		color: $color-white;
+		&:hover,&:focus{color: $color-d-blue;}	
+	}
+}
+
+.calculate-form{
+	.title{
+		padding-bottom: 0.5rem;
+		border-bottom: 1px solid #eee;
+	}	
+	.form-group{
+		margin-bottom: 1.5rem;
+	}
+	.input-field{
+		background-color: #f1f1f1;
+		.icon{
+			width: 30px;
+			font-size: 1.5rem;			
+			text-align: center;
+		}
+		.input{
+			width: calc(100% - 30px);
+		}
+	}
+
+	.input-radio{
+		.input{
+			width: 50%;
+			label{
+				padding: 10px;
+				background-color: #f1f1f1;
+				width: 100%;
+				text-align: center;
+				cursor: pointer;
+				color: $color-black;
+			}
+			input{display: none;}
+			input:checked+label{
+				@include bg-gradient;
+				color: $color-white;
+			}
+		}
+	}
+}
+
+.filters-title-bx .bot-bar{
+	display: block;
+	margin-top: 10px;
+	background-color: $color-blue;
+}
+.filter-sec{
+	padding: 2rem 0;
+
+	.cat-input{
+		margin-bottom: 1rem;
+		input {
+			display: none;
+		}
+		label {
+			padding: 10px;
+			margin-bottom: 0;
+			background-color: #f1f1f1;
+			width: 100%;
+			text-align: center;
+			cursor: pointer;
+			color: $color-black;
+			border-radius: 1.5rem;
+		}
+		input:checked+label{
+			@include bg-gradient;
+			color: $color-white;
+		}
+	}
+	.radio{
+		label{cursor: pointer;}
+		input[type="checkbox"] {
+			position: absolute;
+			opacity: 0;
+			+ .radio-label {
+				&:before {
+					content: '';
+					background: $color-white;
+					border-radius: 100%;
+					border: 1px solid $site-color;
+					display: inline-block;
+					width: 1rem;
+					height: 1rem;
+					position: relative;
+					top: 6px;
+					margin-right: 1em; 
+					vertical-align: top;
+					cursor: pointer;
+					text-align: center;
+					transition: all 250ms ease;
+				}
+			}
+			&:checked {
+				+ .radio-label {
+					&:before {
+						background-color: $color-blue;
+						border: 1px solid rgba($color-white, 0.5);
+						box-shadow: inset 0 0 0 2px rgba($color-white, 0.5);
+					}
+				}
+			}
+			&:focus {
+				+ .radio-label {
+					&:before {
+						outline: none;
+						border-color: $color-blue;
+					}
+				}
+			}
+			&:disabled {
+				+ .radio-label {
+					&:before {
+						box-shadow: inset 0 0 0 4px $color-white;
+						border-color: darken($color-white, 25%);
+						background: darken($color-white, 25%);
+					}
+				}
+			}
+			+ .radio-label {
+				&:empty {
+					&:before {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+

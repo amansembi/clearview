@@ -1,0 +1,79 @@
+// footer scss
+
+.footer-sec,
+.copyright-bx{
+	color: $color-white;
+}
+.copyright-bx{
+	padding: 0.8rem 0;
+	font-size: 0.875rem;
+}
+.footer-sec{
+	a{
+		color: $color-white;
+		&:hover,&:focus{
+			color: #53a8de
+		}
+	}
+}
+.footer-top{
+	padding: 0.5rem 0;
+	border-bottom: 1px solid $color-white;
+	ul>li>a{
+		padding: 0.5rem 1rem;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
+
+.footer-bottom{
+	padding: 0.8rem 0;
+	.social-links{
+		margin-bottom: 1rem;
+	}
+}
+
+.main-footer{
+	.navbar-brand{
+		max-width: 250px;
+	}
+}
+.footer-bx ul>li{
+	margin-bottom: 0.8rem;
+	a{
+		position: relative;
+		&:before{
+			content: '';
+			width: 0;
+			height: 2px;
+			background-color: $color-blue;
+			position: absolute;
+			top: 12px;
+			left: 0;
+			@include common-transition;
+		}
+		&:hover,&:focus{
+			padding-left: 1rem;
+			&:before{
+				width: 10px;
+			}
+		}
+	}
+}
+.subscribe-email{
+	.input-email{
+		width: 100%;
+		.form-control{
+			border: none;
+			background-color: #fff;
+			border-radius: 0;
+			height: auto;
+			padding: 0.7rem;
+		}
+	}
+	.submit{
+		button{
+			height: 100%;
+		}
+	}
+}
